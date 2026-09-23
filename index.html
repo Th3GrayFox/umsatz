@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Umsatz Frankfurt</title>
+
+<!-- ===================================================================
+     HIER DAS ZIEL EINTRAGEN
+     Die /exec-Adresse der Web-App zwischen die Anführungszeichen setzen.
+     Sie kommt zweimal vor: hier unten und im <script>-Teil.
+     =================================================================== -->
+<meta http-equiv="refresh" content="0; url=ZIEL-ADRESSE-HIER">
+
+<style>
+  :root{color-scheme:light dark}
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+       font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+       background:#F2F5F1;color:#17221C;text-align:center;padding:24px}
+  @media (prefers-color-scheme:dark){body{background:#0F1512;color:#E5ECE7}}
+  a{color:#2C684A}
+  @media (prefers-color-scheme:dark){a{color:#7BC39B}}
+  p{font-size:15px;line-height:1.5}
+</style>
+</head>
+<body>
+  <p>
+    Weiterleitung zum Umsatz-Tracker …<br>
+    <a id="ziel" href="ZIEL-ADRESSE-HIER">Falls nichts passiert: hier tippen</a>
+  </p>
+<script>
+  // Gleiche Adresse wie oben eintragen:
+  var ZIEL = "ZIEL-ADRESSE-HIER";
+  document.getElementById("ziel").href = ZIEL;
+  location.replace(ZIEL);
+</script>
+</body>
+</html>
